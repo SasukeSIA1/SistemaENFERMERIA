@@ -84,7 +84,7 @@
                     <li data-role="list-divider">Reportes</li>
                     <li data-icon="heart" class="ui-shadow-icon ui-btn ui-shadow ui-corner-all ui-btn-b"><a href="./Modulo_Reportes/Consultas.html" onclick="fadeOut(500)" target="Marco">Consultas Medicas</a></li>
                     <li data-icon="plus" class="ui-shadow-icon ui-btn ui-shadow ui-corner-all ui-btn-b"><a href="./Modulo_Reportes/Medicamentos.html" onclick="fadeOut(500)" target="Marco">Medicamentos</a></li>
-                    <li data-icon="user" class="ui-shadow-icon ui-btn ui-shadow ui-corner-all ui-btn-b"><a href="./Modulo_Reportes/Personal.html" onclick="fadeOut(500)" target="Marco">Personal</a></li>
+                    <li data-icon="user" class="ui-shadow-icon ui-btn ui-shadow ui-corner-all ui-btn-b"><a href="" onclick="fadeOut(500)" target="Marco">Personal</a></li>
                  </ul> 
                 </div>
                 

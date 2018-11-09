@@ -9,8 +9,55 @@ and open the template in the editor.
         <title>Reporte de Medicamentos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../jquery1.4/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css"/>
+        <link href="../jquery1.4/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <script src="../jquery1.4/demos/js/jquery.js" type="text/javascript"></script>
+        <script src="../jquery1.4/demos/js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+        
+        <style>
+            .Padre
+            {
+                padding-left: 25%;      
+                        
+            }
+            .ui-field-contain
+            {
+                padding-top: 5%;
+            }
+                    
+            
+                </style>
     </head>
     <body>
-        <div>HOLA</div>
+        <div class="Padre" style="">
+            <div class="ui-field-contain">
+            <form class="ui-body ui-body-a ui-corner-all" style="width:65%;">
+                <h2 style="text-align: center;">Reporte de Medicamentos</h2>
+                <span style="float:left; width: 480px;">
+                    <select name="select-native-2" id="select-native-2" data-mini="true">
+                    <option value="0">Seleccionar</option>
+                    <option value="Esxistencias">Existencias</option>
+                    <option value="Caducados">Caducados</option>
+                    <option value="Faltantes">Faltantes</option>
+                </select>
+                </span>
+                <span style="float: left; width: 150px; padding-left: 20px;">
+                    <input type="submit" value="Buscar">
+                </span>
+                <table style="width: 100%; background-color: aqua; border-color: black 3px;">
+                    <tr>
+                        <th>Medicamentos</th>
+                    </tr>
+                </table>
+                <br>
+                <div style="width: 150px; padding-left: 500px;">
+                    <input type="submit" value="Imprimir"/>
+                </div>
+                
+            </form>
+            
+        </div>
+        </div>
+        
     </body>
 </html>
