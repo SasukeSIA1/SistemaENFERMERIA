@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Reporte de Consultas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../jquery1.4/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css"/>
+        <link href="../jquery1.4/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <script src="../jquery1.4/demos/js/jquery.js" type="text/javascript"></script>
+        <script src="../jquery1.4/demos/js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+
+                <style>
+                    .Padre
+                    {
+                        padding-left: 25%;      
+                        
+                    }
+                    .ui-field-contain{
+                        padding-top: 15%;
+                    }
+                    
+            
+                </style>
+    </head>
+    <body>
+        <div class="Padre" style="padding-top: 2%;">
+            <form class="ui-body ui-body-a ui-corner-all" style="width:65%;">
+                <h2 style="text-align: center;">Reporte de Consultas</h2>
+                <span style="float: left; height: 100px; width: 80px; line-height: 50px; margin-left: 15px;">
+                    <label><strong>Fecha</strong></label>
+                </span>
+                <span style="float: left; height: 100px; width: 150px;">
+                    <input type="date"/>
+                </span>
+                <span style="float: left; height: 100px; width: 35px; line-height: 50px; margin-left: 20px;">
+                    <label><strong>a</strong></label>
+                </span>
+                <span style="float: left; height: 100px; width: 150px;">
+                    <input type="date"/>
+                </span>
+                <span style="float: left; height: 100px; width: 150px; margin-left: 15px;">
+                    <input type="submit" value="Buscar"/>
+                </span>
+            
+                <table style="width: 100%; text-align: center;">
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Nombre</th>
+                        <th>Tipo Paciente</th>
+                        <th>Disgnostico</th>
+                        <th>Tratamiento</th>
+                    </tr>
+                    <tr>
+                        <td>19/08/2018</td>
+                        <td>Rodrigo Leyva</td>
+                        <td>Alumno</td>
+                        <td>Loco</td>
+                        <td>Nada</td>
+                    </tr>
+                </table>
+                <br/>
+                <div style="width: 150px; padding-left: 465px;">
+                    <input type="submit" value="Imprimir"/>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
