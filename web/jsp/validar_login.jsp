@@ -16,7 +16,7 @@
         if(Usuario.equals("ITSON") && Contraseña.equals("123")){
 
         HttpSession sesion = request.getSession(true);
-        sesion.setAttribute("kino","1");
+        sesion.setAttribute("ITSON","1");
 
         %>           
         
@@ -25,13 +25,22 @@
         </script>
         
         <%
-        }else{
+        }else if(Usuario.equals("ITSONF") && Contraseña.equals("123")){
+        HttpSession sesion = request.getSession(true);
+        sesion.setAttribute("Enfermera","1");
         %>            
 
         <script >
-         location.href="../index.html";
+         location.href="../MenuEnf.jsp";
         </script>
         
+        <%
+        }else{
+        %>
+        <script >
+            alert("Datos Incorrectos!");
+         location.href="../index.html";
+        </script>
         <%
         }
         %>

@@ -33,7 +33,7 @@
         
         <%
         HttpSession sesion = request.getSession(false);
-        String sesionmenu = (String)sesion.getAttribute("kino");
+        String sesionmenu = (String)sesion.getAttribute("ITSON");
         
         if(sesionmenu == null){
         %>           
