@@ -32,48 +32,46 @@ and open the template in the editor.
     </head>
     <body>
         <div class="Padre">
-        <form class="ui-body ui-body-a ui-corner-all">
+        <form class="ui-body ui-body-a ui-corner-all" method="post" action="../ModuloEnfemeria/JSP/Registro.jsp">
             <div class="ui-body ui-body-a ui-corner-all">
                 <h2 style="text-align: center;">Ficha de Identificacion</h2> 
                 <fieldset disabled>
                     
                     <label for="Nombre">Nombre:</label>
                     <div style="width: 100%; display: inline-block;">
-                    <input type="text" class="form-control" id="Nombre" value="Jonathan Orlando Siari Vizcarra">
+                    <input type="text" class="form-control" name="Nombre" value="El Fidel Garcia M.">
                     </div>                     
                     <div class="form-group" style="padding-top:1%;">
                         <label for="Edad:">Edad:</label>
                         <div style="width: 25%; display: inline-block;">
-                            <input type="text" class="form-control" id="Edad:" value="22">
+                            <input type="text" class="form-control" name="Edad:" value="22">
                         </div>
                         <label for="Tipo">Tipo de Paciente</label>
                         <div style="width: 25%; display: inline-block;">
-                            <input type="text" class="form-control" id="Tipo" value="Alumno">
+                            <input type="text" class="form-control" name="Tipo" value="Alumno">
                         </div>
                     </div>                
                 </fieldset>    
-            </div>
-            
+            </div>            
             <div class="ui-body ui-body-a ui-corner-all">
                 <h3 style="text-align: center;">Signos Vitales</h3>
                 <div class="form-group">
                     <label for="Peso">Peso:</label>
                     <div style="width: 25%; display: inline-block;">
-                    <input type="text" class="form-control" id="Peso">
+                    <input type="text" class="form-control" name="Peso">
                     </div>
                     <label for="Peso">Presion:</label>
                     <div style="width: 25%; display: inline-block;">
-                    <input type="text" class="form-control" id="Presion">
+                    <input type="text" class="form-control" name="Presion">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="Temp">Temperatura:</label>
                     <div style="width: 25%; display: inline-block;">
-                    <input type="password" class="form-control" id="Temp">
+                    <input type="text" class="form-control" name="Temp">
                     </div>
                 </div>                                
-            </div>
-            
+            </div>            
             <div class="ui-body ui-body-a ui-corner-all">
                 <h3 style="text-align: center;">Consulta</h3>
                 <div class="form-group">
@@ -84,11 +82,11 @@ and open the template in the editor.
                     <h4>Medicamento</h4>
                     <label for="NombreM">Nombre:</label>
                     <div style="width: 25%; display: inline-block;">
-                        <input type="text" class="form-control" id="NombreM">
+                        <input type="text" class="form-control" name="NombreM">
                     </div>
                     <label for="Dosis:">Dosis:</label>
                     <div style="width: 25%; display: inline-block;">
-                        <input type="text" class="form-control" id="Dosis:">
+                        <input type="text" class="form-control" name="Dosis">
                     </div>
                     <div style="width: 10%; display: inline-block;">
                         <button type="button" class="btn btn-primary btn-sm">+</button>
@@ -96,14 +94,13 @@ and open the template in the editor.
                 </div>
                 <div class="form-group">
                     <label for="comment">Observaciones</label>
-                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <textarea class="form-control" rows="5" name="comment"></textarea>
                 </div>  
             </div>
             <div style="padding-top:5%">
-            <button type="button" class="btn btn-primary btn-lg" onclick="location.href='../ModuloEnfemeria_Consultas/Nueva.html'">Volver</button>
-            <button type="button" class="btn btn-primary btn-lg" style="float: right;">Guardar</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="location.href='../ModuloEnfemeria/NuevaB.jsp'">Volver</button>
+            <button type="submit" class="btn btn-primary btn-lg" style="float: right;">Guardar</button>
             <div>
         </form>
         </div>
     </body>
-</html>

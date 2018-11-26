@@ -82,10 +82,10 @@
                 <div class="nav-glyphish-example">
                  <ul data-role="listview">
                     <li data-role="list-divider">Registro</li>
-                    <li data-icon="plus" class="ui-shadow-icon ui-btn ui-shadow ui-corner-all ui-btn-b"><a href="./ModuloEnfemeria_Consultas/Nueva.html" onclick="fadeOut(500)" target="Marco">Nueva Consulta</a></li>
+                    <li data-icon="plus" class="ui-shadow-icon ui-btn ui-shadow ui-corner-all ui-btn-b"><a href="ModuloEnfemeria/Busqueda.html" onclick="fadeOut(500)" target="Marco">Nueva Consulta</a></li>
                      
                     <li data-role="list-divider">Reportes</li>                                                      
-                    <li data-icon="heart" class="ui-shadow-icon ui-btn ui-shadow ui-corner-all ui-btn-b"><a href="./ModuloEnfemeria_Consultas/ReporteC.html" onclick="fadeOut(500)" target="Marco">Consultas Realizadas</a></li>
+                    <li data-icon="heart" class="ui-shadow-icon ui-btn ui-shadow ui-corner-all ui-btn-b"><a href="ModuloEnfemeria/ReporteC.jsp" onclick="fadeOut(500)" target="Marco">Consultas Realizadas</a></li>
                     
                  </ul> 
                 </div>

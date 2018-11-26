@@ -21,7 +21,7 @@
         %>           
         
         <script >
-         location.href="../jsp/ejemploPost.jsp";
+         location.href="../jsp/menu.jsp";
         </script>
         
         <%
