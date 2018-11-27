@@ -32,15 +32,15 @@
         </script>
         
         <% //codigo para la BD
-        }else if(Usuario.equals("ITSONF") && Contraseña.equals("123")){
+        }else if(Usuario.equals("Enfermera1") && Contraseña.equals("123")){
                 HttpSession sesion = request.getSession(true);
-                sesion.setAttribute("ITSONF","1");
+                sesion.setAttribute("Enfermera1","1");
                 
             /*else if(rs.next()){
             if(rs.getString(2).equals(Contraseña)){
             HttpSession sesion = request.getSession(true);
             sesion.setAttribute("Enfermera","1");}*/
-        %>            
+        %>     
         
         <script >
          location.href="../MenuEnf.jsp";

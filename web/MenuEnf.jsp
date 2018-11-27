@@ -38,7 +38,7 @@
         
         <%
         HttpSession sesion1 = request.getSession(false);
-        String sesionmenu = (String)sesion1.getAttribute("Enfermera");
+        String sesionmenu = (String)sesion1.getAttribute("Enfermera1");
         
         if(sesionmenu == null){
         %>           
