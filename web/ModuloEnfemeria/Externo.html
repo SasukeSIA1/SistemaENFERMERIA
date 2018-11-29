@@ -18,7 +18,9 @@ and open the template in the editor.
         <script src="../Boostrap/bootstrap.min.js"></script>
         
         <style>
-            #UsuariosExt {                
+            #UsuariosExt {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
                 width: 100%;
             }
 
@@ -26,14 +28,17 @@ and open the template in the editor.
                 border: 1px solid #ddd;
                 padding: 8px;
             }
-            
+
+            #UsuariosExt tr:nth-child(even){background-color: #f2f2f2;}
 
             #UsuariosExt tr:hover {background-color: #ddd;}
 
-            #UsuariosExt th {               
+            #UsuariosExt th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
                 background-color: #2874A6;
                 color: white;
-                font-size: 16px;
             }
         </style>
         
@@ -47,28 +52,30 @@ and open the template in the editor.
         <div style="padding-top: 2%; padding-left: 20%;">
         <form id="formulario" class="ui-body ui-body-a ui-corner-all" style="width:80%;">
             <div style="text-align: center; display: inline-block;"><h2>Personal Externo</h2></div>
-            <div style="display: inline-block; float: right; padding-top: 5%;"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Nuevo +</button></div>
-            <table id="UsuariosExt">
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th >Puesto</th>
-                        <th >Consulta</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <td>Mario Martinez Vlz.</td>
-                    <td>Vigilancia</td>
-                    <td><button style="background:#2874A6; color: white;" class="btn btn-default" type="button" onclick='location.href="../ModuloEnfemeria/Registro.html"'>Seleccionar</button></td>
-                    </tr>
-                    <tr>
-                    <td>Laura Martinez Lopez</td>
-                    <td>Mantenimiento</td>
-                    <td><button style="background:#2874A6; color: white;" class="btn btn-default" type="button" onclick='location.href="../ModuloEnfemeria/Registro.html"'>Seleccionar</button></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div style="display: inline-block; float: right; padding-top: 1%;"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Nuevo +</button></div>
+            <div>
+                <table id="UsuariosExt">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th >Puesto</th>
+                            <th >Consulta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mario Martinez Vlz.</td>
+                            <td>Vigilancia</td>
+                            <td><button style="background:#2874A6; color: white;" class="btn btn-default" type="button" onclick='location.href="../ModuloEnfemeria/Registro.html"'>Seleccionar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Laura Martinez Lopez</td>
+                            <td>Mantenimiento</td>
+                            <td><button style="background:#2874A6; color: white;" class="btn btn-default" type="button" onclick='location.href="../ModuloEnfemeria/Registro.html"'>Seleccionar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            <div>
         </form>
         </div>
         
@@ -78,14 +85,31 @@ and open the template in the editor.
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Nuevo Paciente</h4>
+                        <h2 class="modal-title" id="myModalLabel" style="text-align: center;">Nuevo Paciente</h2>
                     </div>
                     <div class="modal-body">
-                        
+                        <h3>Ficha de Identificacion</h3> 
+                            <label for="Nombre">Nombre:</label>
+                            <div style="width: 100%; display: inline-block;">
+                                <input type="text" class="form-control" name="Nombre">
+                            </div>                     
+                            <div class="form-group" style="padding-top:1%;">
+                                <label for="Edad:">Edad:</label>
+                                <div style="width: 35%; display: inline-block;">
+                                    <input type="text" class="form-control" name="Edad:">
+                                </div>
+                                
+                                <label for="Tipo">Tipo de Paciente:</label>
+                                <div style="width: 35%; display: inline-block;">
+                                    <fieldset disabled>
+                                    <input type="text" class="form-control" name="Tipo" value="Externo">
+                                    </fieldset>
+                                </div>                                
+                            </div>                 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" onclick='location.href="../ModuloEnfemeria/Registro.html"'>Registrar</button>
                     </div>
                 </div>
             </div>
