@@ -49,6 +49,7 @@
                         background-color: #2874A6;
                         color: white;
                         font-size: 16px;
+                        text-align: center;
                     }     
             
                 </style>
@@ -66,7 +67,7 @@
                     <input type="date"/>
                 </span>
                 <span style="float: left; height: 100px; width: 150px; margin-left: 15px;">
-                    <input type="submit" value="Buscar"/>
+                     <button style="background:#2874A6; color: white;" class="btn btn-default" type="button">Buscar</button>
                 </span>
                 </div>
                     
@@ -95,7 +96,7 @@
                 </table>
                 <br/>
                 <div style="width: 150px; float: right">
-                    <input type="button" value="Imprimir"  class="btn btn-default"/>
+                    <button style="background:#339900; color: white;" class="btn btn-default" type="button">imprimir</button>
                 </div>
             </form>
         </div>
