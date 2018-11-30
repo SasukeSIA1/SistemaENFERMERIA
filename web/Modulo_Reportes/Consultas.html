@@ -9,65 +9,119 @@ and open the template in the editor.
         <title>Reporte de Consultas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../jquery1.4/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css"/>
+        
+         <link href="../jquery1.4/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css"/>
         <link href="../jquery1.4/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
         <script src="../jquery1.4/demos/js/jquery.js" type="text/javascript"></script>
         <script src="../jquery1.4/demos/js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
-
+ 
+        <link rel="stylesheet" href="../Boostrap/bootstrap.min.css">
+        <script src="../Boostrap/jquery.min.js"></script>
+        <script src="../Boostrap/bootstrap.min.js"></script>
+        
                 <style>
                     .Padre
                     {
-                        padding-left: 25%;      
+                        padding-left: 29%;      
                         
                     }
                     .ui-field-contain{
-                        padding-top: 15%;
+                    
                     }
                     
+                    #UsuariosExt {                
+                width: 100%;
+            }
+
+            #UsuariosExt td, #UsuariosExt th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
             
+
+            #UsuariosExt tr:hover {background-color: #ddd;}
+
+            #UsuariosExt th {               
+                background-color: #2874A6;
+                color: white;
+                font-size: 16px;
+            }
+           .inputlabel{width:40%}
+           .inputdate{width: 40%}
+           .fechalabel{padding-left: 5%;}
+            .fechalabel,.inputlabel,.alabel,.inputdate,.btnimprimir{display:inline-block;}
+           
+           
+            .nombre{ }
+           
                 </style>
     </head>
     <body>
         <div class="Padre" style="padding-top: 2%;">
-            <form class="ui-body ui-body-a ui-corner-all" style="width:65%;">
+            <form class="ui-body ui-body-a ui-corner-all" style="width:55%;">
+                
                 <h2 style="text-align: center;">Reporte de Consultas</h2>
-                <span style="float: left; height: 100px; width: 80px; line-height: 50px; margin-left: 15px;">
-                    <label><strong>Fecha</strong></label>
-                </span>
-                <span style="float: left; height: 100px; width: 150px;">
-                    <input type="date"/>
-                </span>
-                <span style="float: left; height: 100px; width: 35px; line-height: 50px; margin-left: 20px;">
-                    <label><strong>a</strong></label>
-                </span>
-                <span style="float: left; height: 100px; width: 150px;">
-                    <input type="date"/>
-                </span>
-                <span style="float: left; height: 100px; width: 150px; margin-left: 15px;">
-                    <input type="submit" value="Buscar"/>
-                </span>
+               
+                <div class="fechalabel">
+                    <strong>Fecha</strong>
+                </div>
             
-                <table style="width: 100%; text-align: center;">
+                <div class="inputlabel">
+                    <input type="date"/>
+                </div>
+              <div class="alabel">
+                    <strong>a</strong>
+              </div>
+              <div class ="inputdate">
+                    <input type="date"/>
+               
+          </div>
+                
+             
+            <button style="background:#2874A6; color: white; width:15%; float:left;" class="btn btn-default" type="button" >Buscar</button>
+        
+           
+              
+            <button style="background:#2874A6; color: white; width: 15%; float:right;" class="btn btn-default" type="button" >Imprimir</button>
+           
+                
+                
+            </form>
+         </div>
+        
+     <div style="padding-top: 2%; padding-left: 15%;">
+        <form id="formulario" class="ui-body ui-body-a ui-corner-all" style="width:80%;">
+        <div style="padding-left: 43.5%;"> <h2>Reporte</h2> </div> 
+            <table id="UsuariosExt">
+                <thead>
                     <tr>
                         <th>Fecha</th>
                         <th>Nombre</th>
-                        <th>Tipo Paciente</th>
+                        <th >Tipo Paciente</th>
                         <th>Disgnostico</th>
                         <th>Tratamiento</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
-                        <td>19/08/2018</td>
+                     <td>19/08/2018</td>
                         <td>Rodrigo Leyva</td>
                         <td>Alumno</td>
                         <td>Loco</td>
                         <td>Nada</td>
+                   
                     </tr>
-                </table>
-                <br/>
-                <div style="width: 150px; padding-left: 465px;">
-                    <input type="submit" value="Imprimir"/>
-                </div>
-            </form>
+                    <tr>
+                    <td>19/10/2018</td>
+                        <td>fidel</td>
+                        <td>Alumno</td>
+                        <td>gripa</td>
+                        <td>parecetamol</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
         </div>
+        
     </body>
 </html>
