@@ -11,70 +11,102 @@
         <script src="../jquery1.4/demos/js/jquery.mobile-1.4.5.min.js"></script>
         <style>
             .Padre{
-                padding-left: 29%;                
+                padding-left: 15%;    
+                padding-right: 15%
             }
             .ui-field-contain{
                 padding-top: 15%;
+            }
+            #bloque1, #bloque2 #bloque3 #bloque4 #bloque5{
+                width: 100%;
+            }
+
+            .Id{ padding-left: 5%;width: 35%;}
+
+            .Nombre{ padding-left: 5%;width: 46%;}
+            .Apellido{padding-left: 1%; width: 46%;}
+            .Direccion{padding-left: 5%; width: 93%}
+            .Fecha_Nacimiento{ padding-left: 5%; width: 30%}
+            .Email{ padding-left: 1%; width: 30% }
+            .Telefono{ padding-left: 1%; width: 30%}
+            .Clinica{ padding-left: 5%; width: 46% }
+            .Telefono_Prov{ padding-left: 1%; width: 46%}
+            .btng{ padding-top: 3%; padding-left: 30%; width: 40% }
+            #bloque1 .Id, #bloque2 .Nombre, #bloque2 .Apellido,  #bloque3 .Direccion ,#bloque4 .Fecha_Nacimiento, #bloque4 .Email ,#bloque4 .Telefono, #bloque5 .Clinica ,#bloque5 .Telefono_Prov {
+                display: inline-block;
             }
         </style>
     </head>
 
     <body>        
         <div class="Padre" style="padding-top: 2%;">
-            <form class="ui-body ui-body-a ui-corner-all" style="width:55%;">
-                <table>
-                    <tr>
-                        <td colspan="2" align="center"><h2>Nuevo Personal</h2></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><label for="text-1">ID/RFC</label>
-                            <input type="text" data-clear-btn="true" name="text-1" id="text-1" value=""></td>
-                    </tr>
-                    <tr>
-                        <td><label for="text-2">Nombre:</label>
-                            <input type="text" data-clear-btn="true" name="text-2" id="text-2" value=""></td>
-                        <td><label for="text-3">Apellido</label>
-                            <input type="text" data-clear-btn="true" name="text-3" id="text-3" value=""></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><label for="text-4">Dirección</label>
-                            <input type="text" data-clear-btn="true" name="text-4" id="text-4" value=""></td>
-                    </tr>
-                    <tr>
-                        <td><label for="text-5">Email:</label>
-                            <input type="text" data-clear-btn="true" name="text-5" id="text-5" value=""></td>
-                        <td><label for="tel-1">Télefono:</label>
-                            <input type="tel" data-clear-btn="true" name="tel-1" id="tel-1" value=""></td>
-                    </tr>
-                    <tr>
-                        <td><label for="date-1">Fecha Nacimiento:</label>
-                            <input type="date" data-clear-btn="true" name="date-1" id="date-1" value=""></td>
-                        <td>
-                            <div class="ui-field-contain">                            
-                                <select name="select-native-2" id="select-native-2" data-mini="true">
-                                    <option value="0">Genero</option>
-                                    <option value="Femenino">Femenino</option>
-                                    <option value="Masculino">Masculino</option>
-                                </select>
+            <form id="formulario" class="ui-body ui-body-a ui-corner-all">
+                <center> <h2> Nuevo Personal </h2> </center>   
+                <div id="formulario" class="ui-body ui-body-a ui-corner-all">
+                    <table> 
+                        <div id="bloque1"> 
+                            <div class="Id">
+                                <label for="text-1">ID/RFC</label>
+                                <input type="text" data-clear-btn="true" name="text-1" id="text-1" value="">
                             </div>
-                             </td>
-                    </tr>
-                    <tr>
-                        <td><h3>Lugar de Proveniencia</h3></td>
-                    </tr>
-                    <tr>
-                        <td><label for="text-6">Clínica/Hospital</label>
-                            <input type="text" data-clear-btn="true" name="text-6" id="text-6" value=""></td>
-                        <td><label for="tel-2">Télefono:</label>
-                            <input type="tel" data-clear-btn="true" name="tel-2" id="tel-2" value=""></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="padding-left: 18%;">
-                            <button style="background:#2874A6; width: 80%;" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Guardar</button>
-                        </td>
-                    </tr>                
-                </table>
-                
+                        </div>
+
+                        <div id="bloque2"> 
+                            <div class="Nombre">
+                                <label for="text-2">Nombre:</label>
+                                <input type="text" data-clear-btn="true" name="text-2" id="text-2" value="">
+                            </div>
+                            <div class="Apellido">
+                                <label for="text-3">Apellido</label>
+                                <input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
+                            </div>
+                        </div>
+
+                        <div id="bloque3"> 
+                            <div class="Direccion">
+                                <label for="text-4">Dirección</label>
+                                <input type="text" data-clear-btn="true" name="text-4" id="text-4" value="">
+                            </div>
+                        </div>
+
+                        <div id="bloque4"> 
+                            <div class="Fecha_Nacimiento">
+                                <label for="date-1">Fecha Nacimiento:</label>
+                                <input type="date" data-clear-btn="true" name="date-1" id="date-1" value="">
+                            </div>
+                            <div class="Email">
+                                <label for="text-5">Email:</label>
+                                <input type="text" data-clear-btn="true" name="text-5" id="text-5" value="">
+                            </div>
+                            <div class="Telefono">
+                                <label for="tel-1">Télefono:</label>
+                                <input type="tel" data-clear-btn="true" name="tel-1" id="tel-1" value="">
+                            </div>
+                        </div>  
+                    </table> 
+                </div>    
+
+                <div style="padding-top: 2%;  ">
+                    <div id="formulario"  class="ui-body ui-body-a ui-corner-all">        
+                        <table>   
+                            <h3 style="padding-left: 5%;">Lugar de Proveniencia</h3>  
+                            <div id="bloque5"> 
+                                <div class="Clinica">
+                                    <label for="text-6">Clínica/Hospital</label>
+                                    <input type="text" data-clear-btn="true" name="text-6" id="text-6" value="">
+                                </div>
+                                <div class="Telefono_Prov">
+                                    <label for="tel-2">Télefono:</label>
+                                    <input type="tel" data-clear-btn="true" name="tel-2" id="tel-2" value="">
+                                </div>
+                            </div> 
+
+                        </table>  
+                    </div>
+                </div>
+                <div class="btng"> 
+                    <button style="background:#2874A6;" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Guardar</button>
+                </div>
             </form>
         </div>
     </body>
