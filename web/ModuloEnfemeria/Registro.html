@@ -32,7 +32,7 @@ and open the template in the editor.
     </head>
     <body>
         <div class="Padre">
-            <form class="ui-body ui-body-a ui-corner-all" method="post" > <!--action="../ModuloEnfemeria/JSP/Registro.jsp">-->
+            <form class="ui-body ui-body-a ui-corner-all" method="post"> <!--action="../ModuloEnfemeria/JSP/Registro.jsp">-->
             <div class="ui-body ui-body-a ui-corner-all">
                 <h2 style="text-align: center;">Ficha de Identificacion</h2> 
                 <fieldset disabled>
@@ -97,10 +97,14 @@ and open the template in the editor.
                     <textarea class="form-control" rows="5" name="comment"></textarea>
                 </div>  
             </div>
-            <div style="padding-top:5%">
-            <button type="button" class="btn btn-primary btn-lg" onclick="location.href='../ModuloEnfemeria/Busqueda.html'">Volver</button>
-            <button type="button" class="btn btn-primary btn-lg" onclick="location.href='../ModuloEnfemeria/Busqueda.html'" style="float: right;">Guardar</button>
-            <div>
+            <div style="padding-top:5%;">
+                <div style="display: inline-block; float: right; padding-left: 5%">
+                    <button style="width: 100%;" type="button" class="btn btn-primary btn-lg" onclick="location.href='../ModuloEnfemeria/Busqueda.html'">Guardar</button>
+                </div>
+                <div style="display: inline-block; float: right; padding-left: 5%">
+                    <button style="width: 100%;" type="button" class="btn btn-warning btn-lg" onclick="location.href='../ModuloEnfemeria/Busqueda.html'">Volver</button>            
+                </div>
+            </div>
         </form>
         </div>
     </body>
